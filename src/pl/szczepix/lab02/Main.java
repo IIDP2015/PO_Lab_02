@@ -11,6 +11,12 @@ public class Main
 {
     public static void main(String[] args) 
     {
+        // funkcja do zadania 4 w Tablicach
+        zadanie4Tablice();
+    }
+    
+    public static void zadanie4Tablice()
+    {
         Scanner sc = new Scanner(System.in);
         System.out.print("Wprowadź ilośc liczb: ");
         int N = sc.nextInt();
