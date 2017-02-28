@@ -13,7 +13,8 @@ public class Main
     {
         // funkcja do zadania 4 w Tablicach
 //        zadanie4Tablice();
-        zadanie6Lancuchy();
+//        zadanie6Lancuchy();
+        zadanie6Lancuchy2();
     }
     
     public static void zadanie4Tablice()
@@ -58,6 +59,20 @@ public class Main
         String nowyTekst = new StringBuffer(tekst).reverse().toString();
         
         System.out.println(tekst + nowyTekst);
+    }
+    
+    public static void zadanie6Lancuchy2()
+    {
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Wprowadź tekst: ");
+        String tekst = sc.nextLine();
+        
+        for (int i = tekst.length(); i > 0; i--)
+        {
+            tekst+=tekst.charAt(i-1);
+        }
+        
+        System.out.println(tekst);
     }
     
 }
