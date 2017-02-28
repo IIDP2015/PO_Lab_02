@@ -12,7 +12,8 @@ public class Main
     public static void main(String[] args) 
     {
         // funkcja do zadania 4 w Tablicach
-        zadanie4Tablice();
+//        zadanie4Tablice();
+        zadanie6Lancuchy();
     }
     
     public static void zadanie4Tablice()
@@ -46,6 +47,17 @@ public class Main
             result+=tab[i];
         }
         return result /= tab.length;
+    }
+    
+    public static void zadanie6Lancuchy()
+    {
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Wprowadź tekst: ");
+        String tekst = sc.nextLine();
+        
+        String nowyTekst = new StringBuffer(tekst).reverse().toString();
+        
+        System.out.println(tekst + nowyTekst);
     }
     
 }
